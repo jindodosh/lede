@@ -12,9 +12,9 @@ name: OpenWrt-X86-20191213
 on:
   schedule:
     - cron: 0 20 * * *
-  push:
-    branches: 
-      - master
+push:
+   branches: 
+     - master
 
 jobs:
   build:
@@ -163,6 +163,9 @@ jobs:
           CONFIG_PACKAGE_luci-app-webadmin=y
           CONFIG_PACKAGE_luci-app-wireguard=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
+          CONFIG_PACKAGE_luci-app-softethervpn=y
+          CONFIG_PACKAGE_luci-app-autoreboot=y
+          CONFIG_PACKAGE_trojan=y
           EOF
 
           # LuCI主题:

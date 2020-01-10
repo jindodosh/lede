@@ -10,8 +10,8 @@
 name: OpenWrt-X86-20191213
 
 on:
-  schedule:
-    - cron: 0 20 * * *
+#  schedule:
+#    - cron: 0 20 * * *
 push:
    branches: 
      - master
